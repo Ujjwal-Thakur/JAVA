@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]){
+        System.out.print("Hello Everyone");             //"print" function is used to print. but next output will also get printed on same line.
+        System.out.println("Hello World");              //"println" function will print line and end the line now the new output will be printed on new line.
+        System.out.print("My name is Ujjwal Thakur\n"); //"\n" is used to break the line.
+        System.out.print("This is new line.\nAnother Line\n");
+
+
+//Java is a "typed" language, it means we need to type or specify the datatype when we declare a new variable.
+//There are two types of data types in java: Primitive and Non-Primitive
+//Primitive data types: int, char, long, float, double, byte, short,boolean
+//Non-Primitive: String, Array, Class, Object, Interface
+
+//Input:
+//for taking input we need to import the package "java.util";
+//and Scanner class is used to take input.
+
+Scanner sc = new Scanner(System.in);
+System.out.print("Name: ");
+String name = sc.next();                    //"next" function takes string as input; but only one token (1 token = 1 word);
+System.out.println(name);
+
+sc.nextLine();                             //Clear the newline character left by next();
+
+System.out.print("Sentence: ");
+String sentence = sc.nextLine();           //"nextLine" function is used to take full length string as input.
+System.out.println(sentence);
+
+System.out.print("x: ");
+int x = sc.nextInt();                      //"nextInt" is used for taking integer as input;
+System.out.print("y: ");
+int y = sc.nextInt();
+int sum = x+y;
+System.out.println("the sum of "+ x + " and "+ y +" is: "+sum);
+sc.close();                                              // Close the scanner to release resources
+
+//  Similarily "nextLong" is used to take long as input and "nextDouble" is used to take double as input...
+
+    }
+}
