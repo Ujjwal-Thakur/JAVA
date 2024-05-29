@@ -38,5 +38,8 @@ sc.close();                                              // Close the scanner to
 
 //  Similarily "nextLong" is used to take long as input and "nextDouble" is used to take double as input...
 
+//for taking char as input :
+char ch = sc.next().charAt(0);    //here  charAt is used to take char at index 0 as input;
+
     }
 }
